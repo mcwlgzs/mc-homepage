@@ -1,0 +1,28 @@
+{
+    "name": "沐辰的个人主页",
+    "short_name": "沐辰",
+    "description": "沐辰的个人主页 - 全栈开发工程师",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#3b82f6",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/assets/images/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/assets/images/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "categories": ["portfolio", "web development", "technology"],
+    "lang": "zh-CN",
+    "dir": "ltr",
+    "prefer_related_applications": false
+} 

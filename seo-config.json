@@ -1,0 +1,102 @@
+{
+  "site": {
+    "name": "沐辰的个人网站",
+    "title": "沐辰网络 - 个人主页 | 全栈开发工程师 - Web开发专家",
+    "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。",
+    "url": "https://mcwl.net",
+    "domain": "mcwl.net",
+    "language": "zh-CN",
+    "charset": "UTF-8",
+    "author": "沐辰",
+    "copyright": "© 2024 沐辰. All rights reserved.",
+    "email": "mcwlgzs@qq.com"
+  },
+  "keywords": {
+    "primary": ["沐辰", "沐辰网络", "全栈开发", "Web开发", "前端开发", "后端开发"],
+    "secondary": ["JavaScript", "Python", "React", "Node.js", "技术博客", "程序员"],
+    "long_tail": ["沐辰网络工作室", "个人主页", "软件工程师", "网站建设", "技术咨询", "项目合作"]
+  },
+  "social_media": {
+    "github": "https://github.com/mcwlgzs",
+    "juejin": "https://juejin.cn/user/3499111424736713",
+    "wechat": "微信二维码",
+    "qq": "tencent://message/?uin=38983891"
+  },
+  "structured_data": {
+    "person": {
+      "name": "沐辰",
+      "alternateName": "MC",
+      "jobTitle": "全栈开发工程师",
+      "description": "专注于Web全栈开发，擅长前端架构设计和后端系统开发，热衷技术创新与分享",
+      "image": "https://mcwl.net/assets/images/avatar.png",
+      "url": "https://mcwl.net",
+      "nationality": "中国",
+      "worksFor": "自由开发者",
+      "alumniOf": "清华大学"
+    },
+    "skills": [
+      "Web开发", "前端架构", "后端开发", "JavaScript", "Python", 
+      "React", "Node.js", "TypeScript", "HTML5", "CSS3", "Git"
+    ]
+  },
+  "meta_tags": {
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "revisit_after": "7 days",
+    "rating": "general",
+    "distribution": "global",
+    "coverage": "Worldwide",
+    "target": "developers, clients, recruiters, tech enthusiasts",
+    "category": "technology, web development, programming, portfolio"
+  },
+  "open_graph": {
+    "type": "profile",
+    "locale": "zh_CN",
+    "site_name": "沐辰的个人网站",
+    "title": "沐辰的个人主页 | 全栈开发工程师",
+    "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。",
+    "image": "https://mcwl.net/assets/images/avatar.png",
+    "image_alt": "沐辰的个人头像 - 全栈开发工程师"
+  },
+  "twitter_card": {
+    "card": "summary_large_image",
+    "creator": "@yourtwitterhandle",
+    "title": "沐辰的个人主页 | 全栈开发工程师",
+    "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示。",
+    "image": "https://mcwl.net/assets/images/avatar.png"
+  },
+
+  "analytics": {
+    "google_analytics": "G-XXXXXXXXXX",
+    "baidu_tongji": "YOUR_BAIDU_TONGJI_CODE",
+    "cnzz": "YOUR_CNZZ_CODE"
+  },
+  "performance": {
+    "preconnect_domains": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://cdnjs.cloudflare.com"
+    ],
+    "dns_prefetch_domains": [
+      "https://fonts.googleapis.com",
+      "https://fonts.gstatic.com",
+      "https://cdnjs.cloudflare.com"
+    ]
+  },
+  "sitemap": {
+    "url": "https://mcwl.net/sitemap.xml",
+    "last_modified": "2024-03-20T12:00:00+08:00",
+    "change_frequency": "weekly",
+    "priority": 1.0
+  },
+  "robots_txt": {
+    "user_agent": "*",
+    "allow": "/",
+    "disallow": ["/assets/files/private/", "/cgi-bin/", "/tmp/", "/admin/"],
+    "sitemap": "https://mcwl.net/sitemap.xml",
+    "crawl_delay": {
+      "googlebot": 1,
+      "baiduspider": 2,
+      "bingbot": 2
+    }
+  }
+}

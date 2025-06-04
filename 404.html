@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面未找到 - 沐辰的个人网站</title>
+    <meta name="description" content="抱歉，您访问的页面不存在。请返回首页或使用导航菜单查找您需要的内容。">
+    <meta name="robots" content="noindex, nofollow">
+    
+    <!-- 引入Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    
+    <style>
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        .bounce-in {
+            animation: bounceIn 1s ease-out;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0.3); opacity: 0; }
+            50% { transform: scale(1.05); }
+            70% { transform: scale(0.9); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="gradient-bg min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-md w-full">
+        <div class="bg-white rounded-2xl shadow-2xl p-8 text-center bounce-in">
+            <!-- 404图标 -->
+            <div class="floating mb-6">
+                <div class="w-24 h-24 mx-auto bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-4xl font-bold shadow-lg">
+                    404
+                </div>
+            </div>
+            
+            <!-- 标题 -->
+            <h1 class="text-3xl font-bold text-gray-800 mb-4">页面未找到</h1>
+            
+            <!-- 描述 -->
+            <p class="text-gray-600 mb-8 leading-relaxed">
+                抱歉，您访问的页面不存在或已被移动。<br>
+                请检查URL是否正确，或返回首页继续浏览。
+            </p>
+            
+            <!-- 按钮组 -->
+            <div class="space-y-4">
+                <a href="/" class="block w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 px-6 rounded-lg font-medium hover:from-blue-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    <i class="fas fa-home mr-2"></i>
+                    返回首页
+                </a>
+                
+                <button onclick="history.back()" class="block w-full bg-gray-100 text-gray-700 py-3 px-6 rounded-lg font-medium hover:bg-gray-200 transition-all duration-300">
+                    <i class="fas fa-arrow-left mr-2"></i>
+                    返回上一页
+                </button>
+            </div>
+            
+            <!-- 搜索建议 -->
+            <div class="mt-8 pt-6 border-t border-gray-200">
+                <p class="text-sm text-gray-500 mb-4">您可能在寻找：</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <a href="/#about" class="text-xs bg-blue-50 text-blue-600 px-3 py-1 rounded-full hover:bg-blue-100 transition-colors">关于我</a>
+                    <a href="/#skills" class="text-xs bg-green-50 text-green-600 px-3 py-1 rounded-full hover:bg-green-100 transition-colors">技能专长</a>
+                    <a href="/#projects" class="text-xs bg-purple-50 text-purple-600 px-3 py-1 rounded-full hover:bg-purple-100 transition-colors">项目展示</a>
+                    <a href="/#contact" class="text-xs bg-orange-50 text-orange-600 px-3 py-1 rounded-full hover:bg-orange-100 transition-colors">联系方式</a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 底部信息 -->
+        <div class="text-center mt-6">
+            <p class="text-white text-sm opacity-80">
+                © 2024 沐辰的个人网站. All rights reserved.
+            </p>
+        </div>
+    </div>
+
+    <!-- 背景装饰 -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute -top-40 -right-40 w-80 h-80 bg-white opacity-10 rounded-full"></div>
+        <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-white opacity-10 rounded-full"></div>
+        <div class="absolute top-1/2 left-1/4 w-20 h-20 bg-white opacity-20 rounded-full floating" style="animation-delay: -1s;"></div>
+        <div class="absolute top-1/3 right-1/4 w-16 h-16 bg-white opacity-20 rounded-full floating" style="animation-delay: -2s;"></div>
+    </div>
+
+    <script>
+        // 自动记录404错误（如果有分析工具）
+        if (typeof gtag !== 'undefined') {
+            gtag('event', 'page_view', {
+                page_title: '404 Error',
+                page_location: window.location.href
+            });
+        }
+        
+        // 添加键盘快捷键
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                window.location.href = '/';
+            } else if (e.key === 'Escape') {
+                history.back();
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+                            http://www.google.com/schemas/sitemap-image/1.1
+                            http://www.google.com/schemas/sitemap-image/1.1/sitemap-image.xsd">
+
+    <!-- 主页 -->
+    <url>
+        <loc>https://mcwl.net/</loc>
+        <lastmod>2024-12-04T12:00:00+08:00</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://mcwl.net/assets/images/avatar.png</image:loc>
+            <image:title>沐辰的个人头像</image:title>
+            <image:caption>全栈开发工程师沐辰的个人照片</image:caption>
+        </image:image>
+    </url>
+
+    <!-- 404错误页面 -->
+    <url>
+        <loc>https://mcwl.net/404.html</loc>
+        <lastmod>2024-12-04T12:00:00+08:00</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.1</priority>
+    </url>
+
+</urlset>

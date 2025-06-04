@@ -1,0 +1,80 @@
+# 沐辰个人主页爬虫规则
+User-agent: *
+Allow: /
+Disallow: /assets/files/private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Allow: /sitemap.xml
+Allow: /robots.txt
+
+# 图片搜索引擎
+User-agent: Googlebot-Image
+Allow: /assets/images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Disallow: /assets/images/private/
+
+# 移动端搜索引擎
+User-agent: Googlebot-Mobile
+Allow: /
+Crawl-delay: 1
+
+# Google爬虫
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# 百度爬虫
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# 必应爬虫
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# 360爬虫
+User-agent: 360Spider
+Allow: /
+Crawl-delay: 2
+
+# 搜狗爬虫
+User-agent: Sogou web spider
+Allow: /
+Crawl-delay: 2
+
+# 神马爬虫
+User-agent: YodaoBot
+Allow: /
+Crawl-delay: 2
+
+# 头条爬虫
+User-agent: Bytespider
+Allow: /
+Crawl-delay: 2
+
+# 性能优化
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content
+Request-rate: 1/1
+Visit-time: 0600-2200
+
+# Sitemap
+Sitemap: https://mcwl.net/sitemap.xml
+
+# 允许访问SEO相关文件
+Allow: /404.html
+Allow: /sitemap.xml
+Allow: /.well-known/
+
+# 禁止访问配置文件
+Disallow: /seo-config.json
+Disallow: /.htaccess

@@ -1,0 +1,174 @@
+# 沐辰个人网站 - Apache配置文件
+# 用于SEO优化、性能提升和安全增强
+
+# ==========================================
+# 1. 启用重写引擎
+# ==========================================
+RewriteEngine On
+
+# ==========================================
+# 2. HTTPS重定向
+# ==========================================
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ==========================================
+# 3. WWW重定向 (根据需要选择)
+# ==========================================
+# 重定向到非www版本
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ==========================================
+# 4. 压缩设置
+# ==========================================
+<IfModule mod_deflate.c>
+    # 启用压缩
+    SetOutputFilter DEFLATE
+    
+    # 压缩文本文件
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/xml
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/javascript
+    AddOutputFilterByType DEFLATE application/xml
+    AddOutputFilterByType DEFLATE application/xhtml+xml
+    AddOutputFilterByType DEFLATE application/rss+xml
+    AddOutputFilterByType DEFLATE application/javascript
+    AddOutputFilterByType DEFLATE application/x-javascript
+    AddOutputFilterByType DEFLATE application/json
+    AddOutputFilterByType DEFLATE application/ld+json
+    
+    # 排除已压缩的文件
+    SetEnvIfNoCase Request_URI \
+        \.(?:gif|jpe?g|png|zip|gz|bz2|sit|rar|pdf)$ no-gzip dont-vary
+    SetEnvIfNoCase Request_URI \
+        \.(?:exe|t?gz|zip|bz2|sit|rar)$ no-gzip dont-vary
+</IfModule>
+
+# ==========================================
+# 5. 缓存设置
+# ==========================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # 图片缓存1年
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS和JS缓存1个月
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    
+    # 字体缓存1年
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType application/font-woff "access plus 1 year"
+    ExpiresByType application/font-woff2 "access plus 1 year"
+    
+    # HTML缓存1小时
+    ExpiresByType text/html "access plus 1 hour"
+    
+    # XML和JSON缓存1天
+    ExpiresByType application/xml "access plus 1 day"
+    ExpiresByType text/xml "access plus 1 day"
+    ExpiresByType application/json "access plus 1 day"
+    ExpiresByType application/ld+json "access plus 1 day"
+</IfModule>
+
+# ==========================================
+# 6. 安全头设置
+# ==========================================
+<IfModule mod_headers.c>
+    # 安全头
+    Header always set X-Content-Type-Options nosniff
+    Header always set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    
+    # 内容安全策略
+    Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.tailwindcss.com https://cdnjs.cloudflare.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; img-src 'self' data: https:; connect-src 'self' https:; frame-src 'none'; object-src 'none'; base-uri 'self';"
+    
+    # 缓存控制
+    <FilesMatch "\.(css|js|png|jpg|jpeg|gif|webp|svg|woff|woff2)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+    
+    <FilesMatch "\.(html|htm)$">
+        Header set Cache-Control "public, max-age=3600"
+    </FilesMatch>
+</IfModule>
+
+# ==========================================
+# 7. MIME类型设置
+# ==========================================
+<IfModule mod_mime.c>
+    # 字体类型
+    AddType font/woff .woff
+    AddType font/woff2 .woff2
+    AddType application/font-woff .woff
+    AddType application/font-woff2 .woff2
+    
+    # 图片类型
+    AddType image/webp .webp
+    AddType image/svg+xml .svg
+    
+    # 其他类型
+    AddType application/json .json
+    AddType application/ld+json .jsonld
+    AddType text/cache-manifest .appcache
+</IfModule>
+
+# ==========================================
+# 8. 错误页面
+# ==========================================
+ErrorDocument 404 /404.html
+ErrorDocument 500 /500.html
+
+# ==========================================
+# 9. 目录保护
+# ==========================================
+# 禁止访问敏感文件
+<FilesMatch "\.(htaccess|htpasswd|ini|log|sh|inc|bak)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# 禁止访问隐藏文件
+<FilesMatch "^\.">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# ==========================================
+# 10. SEO友好的URL重写
+# ==========================================
+# 移除尾部斜杠（除了根目录）
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} (.+)/$
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+
+# 移除.html扩展名
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^.]+)$ $1.html [NC,L]
+
+# ==========================================
+# 11. 性能优化
+# ==========================================
+# 启用KeepAlive
+<IfModule mod_headers.c>
+    Header set Connection keep-alive
+</IfModule>
+
+# 禁用服务器签名
+ServerTokens Prod
+ServerSignature Off
