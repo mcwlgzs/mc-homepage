@@ -42,6 +42,8 @@
 - 🌐 **跨平台兼容**：支持所有现代浏览器
 - 🎉 **简单部署**：零配置，开箱即用
 - 🔄 **返回顶部**：平滑滚动的返回顶部按钮
+- 📄 **版权保护**：完整的版权声明和知识产权保护
+- 🏛️ **合规展示**：包含ICP备案和公安备案信息展示
 
 ## 🛠️ 技术栈
 
@@ -72,8 +74,9 @@
 ├── 📄 robots.txt              # 爬虫规则
 ├── 📄 site.webmanifest        # PWA配置
 ├── 📄 seo-config.json         # SEO配置文件
-├── 📄 .htaccess               # Apache服务器配置
-├── 🖼️ homepage.png            # 项目效果展示图
+├── 📄 COPYRIGHT               # 版权声明文件
+├── 📄 LICENSE                 # MIT许可证文件
+├── 🖼️ homepage.webp           # 项目效果展示图
 ├── 📁 assets/
 │   ├── 📁 css/
 │   │   └── 📄 main.css        # 主样式文件
@@ -83,6 +86,8 @@
 │   │   ├── 🖼️ avatar.png      # 个人头像
 │   │   ├── 🖼️ wechat-qr.jpg   # 微信二维码
 │   │   ├── 🖼️ favicon.ico     # 网站图标
+│   │   ├── 🖼️ icp-icon.svg    # ICP备案图标
+│   │   ├── 🖼️ police-icon.svg # 公安备案图标
 │   │   ├── 🖼️ android-chrome-192x192.png  # Android图标 192x192
 │   │   └── 🖼️ android-chrome-512x512.png  # Android图标 512x512
 │   └── 📁 files/              # 文档资源
@@ -198,21 +203,38 @@ http-server
 <!-- 其他社交媒体链接 -->
 ```
 
+### 5️⃣ 备案信息配置
+如需修改备案信息，请编辑 `index.html` 和 `404.html` 中的备案号：
+```html
+<!-- ICP备案信息 -->
+<div class="icp-info">
+    <a href="http://beian.miit.gov.cn">
+        <img src="./assets/images/icp-icon.svg" alt="ICP备案图标">
+        你的ICP备案号
+    </a>
+    |
+    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=你的备案号">
+        <img src="./assets/images/police-icon.svg" alt="公安备案图标">
+        你的公安备案号
+    </a>
+</div>
+```
+
 ## 🔍 SEO 配置
 
-### 1️⃣ 站点地图设置
+### 6️⃣ 站点地图设置
 修改 `sitemap.xml` 中的网站 URL：
 ```xml
 <loc>https://你的域名.com/</loc>
 ```
 
-### 2️⃣ 爬虫配置
+### 7️⃣ 爬虫配置
 更新 `robots.txt` 中的站点地图地址：
 ```txt
 Sitemap: https://你的域名.com/sitemap.xml
 ```
 
-### 3️⃣ 结构化数据
+### 8️⃣ 结构化数据
 修改 `index.html` 中的 JSON-LD 数据：
 ```javascript
 {
@@ -279,6 +301,28 @@ git push origin main
 
 ## 🔄 更新日志
 
+### v1.1.0 (2025-06-05)
+- 📄 **版权信息完善**
+  - 🔄 更新所有文件的版权年份为2025年
+  - 📍 修复页面底部版权信息位置，确保正确显示在页面底部
+  - 📋 新增COPYRIGHT版权声明文件，包含详细的版权信息和使用条款
+  - 📝 为所有源代码文件添加版权注释头部
+  - 📖 更新README文档的版权章节，添加详细说明
+- 🏛️ **ICP备案信息**
+  - 🆔 添加ICP备案号展示
+  - 🚔 添加公安备案号展示
+  - 🎨 创建专用备案图标文件（ICP图标和公安图标）
+  - 📱 支持响应式设计，移动端垂直排列
+  - 🔗 备案号可点击跳转到相应查询页面
+- 🎨 **页面布局优化**
+  - 🔧 修复footer布局问题，使用flexbox确保底部显示
+  - 📐 优化页面整体布局结构
+  - 📱 改进移动端显示效果
+  - 🎯 增强响应式设计支持
+- 🧹 **代码清理**
+  - 🗑️ 移除临时的版权检查脚本
+  - 📄 删除临时总结报告文件
+  - 🔧 优化CSS样式结构
 
 ### v1.0.0 (2025-06-04)
 - ✨ **初始版本发布**
@@ -349,8 +393,7 @@ git push origin main
 - **联系邮箱**：mcwlgzs@qq.com
 - **项目地址**：https://github.com/mcwlgzs/mc-homepage
 - **官方网站**：https://mcwl.net
-- **ICP备案**：黔ICP备2024038720号
-- **公安备案**：贵公网安备52010302003372号
+- **备案状态**：已完成ICP备案和公安备案
 
 ### 许可证
 本项目采用 [MIT 许可证](LICENSE) 开源，这意味着：
