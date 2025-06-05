@@ -2,7 +2,7 @@
   "_comment": "沐辰个人主页 SEO配置文件 | Copyright (c) 2025 沐辰 (MC) | MIT License | https://github.com/mcwlgzs/mc-homepage",
   "site": {
     "name": "沐辰的个人网站",
-    "title": "沐辰个人主页",
+    "title": "沐辰网络-沐辰个人主页",
     "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。",
     "url": "https://mcwl.net",
     "domain": "mcwl.net",
@@ -53,7 +53,7 @@
     "type": "profile",
     "locale": "zh_CN",
     "site_name": "沐辰的个人网站",
-    "title": "沐辰个人主页",
+    "title": "沐辰网络-沐辰个人主页",
     "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示，期待与您的合作。",
     "image": "https://mcwl.net/assets/images/avatar.png",
     "image_alt": "沐辰的个人头像 - 全栈开发工程师"
@@ -61,7 +61,7 @@
   "twitter_card": {
     "card": "summary_large_image",
     "creator": "@yourtwitterhandle",
-    "title": "沐辰个人主页",
+    "title": "沐辰网络-沐辰个人主页",
     "description": "沐辰的个人主页，专注于Web全栈开发，擅长前端架构设计和后端系统开发。提供专业的技术分享和项目展示。",
     "image": "https://mcwl.net/assets/images/avatar.png"
   },
