@@ -1,3 +1,10 @@
+<!--
+    沐辰个人主页 - 贡献指南 (Muchen Personal Homepage - Contributing Guide)
+    Copyright (c) 2025 沐辰 (MC)
+    GitHub: https://github.com/mcwlgzs/mc-homepage
+    Licensed under MIT License
+-->
+
 # 🤝 贡献指南
 
 感谢您对本项目的关注！我们欢迎任何形式的贡献，包括但不限于：

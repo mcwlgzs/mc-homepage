@@ -340,9 +340,43 @@ git push origin main
 
 [![Star History Chart](https://api.star-history.com/svg?repos=mcwlgzs/mc-homepage&type=Date)](https://star-history.com/#mcwlgzs/mc-homepage&Date)
 
-## 📄 许可证
+## 📄 版权与许可证
 
-本项目采用 [MIT 许可证](LICENSE) - 详见 LICENSE 文件
+### 版权信息
+- **项目名称**：沐辰个人主页 (Muchen Personal Homepage)
+- **版权所有**：© 2025 沐辰 (MC)
+- **作者**：沐辰 (MC)
+- **联系邮箱**：mcwlgzs@qq.com
+- **项目地址**：https://github.com/mcwlgzs/mc-homepage
+- **官方网站**：https://mcwl.net
+- **ICP备案**：黔ICP备2024038720号
+- **公安备案**：贵公网安备52010302003372号
+
+### 许可证
+本项目采用 [MIT 许可证](LICENSE) 开源，这意味着：
+
+✅ **允许的使用方式**：
+- 商业使用
+- 修改代码
+- 分发代码
+- 私人使用
+- 专利使用
+
+⚠️ **使用条件**：
+- 必须包含版权声明和许可证声明
+- 必须包含原始许可证文件
+
+❌ **免责声明**：
+- 作者不承担任何责任
+- 不提供任何担保
+
+### 引用说明
+如果您在项目中使用了本代码，请在适当位置添加以下版权声明：
+```
+基于沐辰个人主页项目 (https://github.com/mcwlgzs/mc-homepage)
+Copyright (c) 2025 沐辰 (MC)
+Licensed under MIT License
+```
 
 ## 🙏 致谢
 

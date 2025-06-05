@@ -1,3 +1,26 @@
+<!--
+    沐辰个人主页 (Muchen Personal Homepage)
+
+    Copyright (c) 2025 沐辰 (MC)
+
+    项目描述：专业的个人主页网站，展示全栈开发工程师的技能、项目和联系方式
+    作者：沐辰 (MC)
+    邮箱：mcwlgzs@qq.com
+    网站：https://mcwl.net
+    GitHub：https://github.com/mcwlgzs/mc-homepage
+
+    本项目基于 MIT 许可证开源，详情请查看 LICENSE 文件
+
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+-->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -22,7 +45,7 @@
     <!-- SEO增强标签 -->
     <meta name="rating" content="general">
     <meta name="distribution" content="global">
-    <meta name="copyright" content="© 2024 沐辰. All rights reserved.">
+    <meta name="copyright" content="© 2025 沐辰 (MC). All rights reserved. Licensed under MIT License.">
     <meta name="reply-to" content="mcwlgzs@qq.com">
     <meta name="owner" content="沐辰">
     <meta name="url" content="https://mcwl.net">
@@ -159,7 +182,8 @@
     <!-- 粒子背景 -->
     <div id="particles-js" class="particles-container" aria-hidden="true"></div>
 
-    <main class="bg-white/80 backdrop-blur-md shadow-xl rounded-lg p-4 sm:p-6 md:p-8 max-w-4xl w-full fade-in mx-auto my-4 sm:my-6 md:my-8" role="main" itemscope itemtype="https://schema.org/ProfilePage">
+    <main role="main">
+        <div class="bg-white/80 backdrop-blur-md shadow-xl rounded-lg p-4 sm:p-6 md:p-8 max-w-4xl w-full fade-in mx-auto my-4 sm:my-6 md:my-8" itemscope itemtype="https://schema.org/ProfilePage">
         <div class="grid md:grid-cols-3 gap-4 md:gap-8">
             <!-- 左侧个人信息 -->
             <div class="md:col-span-1 flex flex-col items-center md:items-stretch">
@@ -502,6 +526,7 @@
                 </div>
             </div>
         </div>
+        </div>
     </main>
 
     <!-- 返回顶部按钮 -->
@@ -715,5 +740,30 @@
             card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
         }
     </script>
+
+    <!-- 页面底部版权信息 -->
+    <footer class="text-center py-6 border-t border-gray-200 bg-white/50 backdrop-blur-sm">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-sm text-gray-600 mb-2">
+                © 2025 <a href="https://mcwl.net" class="text-blue-600 hover:text-blue-800 transition-colors duration-300">沐辰 (MC)</a>. All rights reserved.
+            </p>
+            <p class="text-xs text-gray-500 mb-2">
+                基于 <a href="https://github.com/mcwlgzs/mc-homepage" target="_blank" rel="noopener" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">沐辰个人主页</a> 项目构建 |
+                采用 <a href="https://github.com/mcwlgzs/mc-homepage/blob/main/LICENSE" target="_blank" rel="noopener" class="text-blue-500 hover:text-blue-700 transition-colors duration-300">MIT 许可证</a> 开源
+            </p>
+            <!-- ICP备案信息 -->
+            <div class="icp-info text-xs text-gray-500">
+                <a href="http://beian.miit.gov.cn" target="_blank" rel="noopener" class="inline-flex items-center hover:text-blue-600 transition-colors duration-300">
+                    <img src="./assets/images/icp-icon.svg" alt="ICP备案图标" class="w-4 h-4 mr-1">
+                    京ICP备2025060520号
+                </a>
+                <span class="mx-1">|</span>
+                <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=52010302008888" target="_blank" rel="noopener" class="inline-flex items-center hover:text-blue-600 transition-colors duration-300">
+                    <img src="./assets/images/police-icon.svg" alt="公安备案图标" class="w-4 h-4 mr-1">
+                    京公网安备52010302008888号
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
-</html> 
+</html>

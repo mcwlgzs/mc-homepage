@@ -1,0 +1,128 @@
+沐辰个人主页 (Muchen Personal Homepage) - 版权声明
+================================================================
+
+项目信息
+--------
+项目名称：沐辰个人主页 (Muchen Personal Homepage)
+项目描述：专业的个人主页网站，展示全栈开发工程师的技能、项目和联系方式
+版本：v1.0.0
+创建日期：2025年
+
+版权所有者信息
+--------------
+版权所有：© 2025 沐辰 (MC)
+作者：沐辰 (MC)
+联系邮箱：mcwlgzs@qq.com
+个人网站：https://mcwl.net
+GitHub：https://github.com/mcwlgzs
+项目地址：https://github.com/mcwlgzs/mc-homepage
+
+许可证信息
+----------
+本项目基于 MIT 许可证开源发布。
+
+MIT License
+
+Copyright (c) 2025 沐辰 (MC)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+文件版权说明
+------------
+本项目包含的所有文件均受上述版权保护，具体包括但不限于：
+
+1. 源代码文件
+   - index.html - 主页面文件
+   - assets/css/main.css - 主样式文件
+   - assets/js/cursor.js - 自定义光标效果脚本
+   - 404.html - 错误页面
+
+2. 配置文件
+   - sitemap.xml - 站点地图
+   - robots.txt - 搜索引擎爬虫规则
+   - site.webmanifest - PWA配置文件
+   - seo-config.json - SEO配置
+
+3. 文档文件
+   - README.md - 项目说明文档
+   - LICENSE - 许可证文件
+   - CONTRIBUTING.md - 贡献指南
+   - COPYRIGHT - 本版权声明文件
+
+4. 资源文件
+   - assets/images/ - 图片资源目录
+   - assets/files/ - 文档资源目录
+
+使用条款
+--------
+1. 使用本项目代码时，必须保留原始版权声明
+2. 在衍生作品中必须包含本许可证文件
+3. 不得移除或修改版权声明
+4. 商业使用需要保留版权信息
+
+免责声明
+--------
+1. 本软件按"现状"提供，不提供任何明示或暗示的担保
+2. 作者不对使用本软件造成的任何损失承担责任
+3. 使用者需自行承担使用风险
+
+第三方资源声明
+--------------
+本项目使用了以下第三方资源：
+
+1. Tailwind CSS (MIT License)
+   - 官网：https://tailwindcss.com/
+   - 用途：CSS框架
+
+2. Particles.js (MIT License)
+   - 官网：https://vincentgarreau.com/particles.js/
+   - 用途：粒子背景效果
+
+3. Typed.js (MIT License)
+   - 官网：https://mattboldt.com/demos/typed-js/
+   - 用途：打字机效果
+
+4. Font Awesome (Font Awesome Free License)
+   - 官网：https://fontawesome.com/
+   - 用途：图标库
+
+5. Google Fonts (SIL Open Font License)
+   - 官网：https://fonts.google.com/
+   - 用途：Web字体
+
+备案信息
+--------
+ICP备案号：黔ICP备2024038720号
+公安备案号：贵公网安备52010302003372号
+
+联系方式
+--------
+如有版权相关问题，请通过以下方式联系：
+
+邮箱：mcwlgzs@qq.com
+GitHub Issues：https://github.com/mcwlgzs/mc-homepage/issues
+个人网站：https://mcwl.net
+
+更新记录
+--------
+- 2025年：项目创建，初始版权声明
+- 2025年6月5日：完善版权信息，添加详细说明
+
+---
+本版权声明最后更新于：2025年6月5日

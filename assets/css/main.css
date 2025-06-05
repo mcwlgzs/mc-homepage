@@ -1,3 +1,25 @@
+/*!
+ * 沐辰个人主页 - 主样式文件 (Muchen Personal Homepage - Main Stylesheet)
+ *
+ * Copyright (c) 2025 沐辰 (MC)
+ *
+ * 项目描述：个人主页网站的主要样式文件，包含响应式设计、动画效果和主题样式
+ * 作者：沐辰 (MC)
+ * 邮箱：mcwlgzs@qq.com
+ * 网站：https://mcwl.net
+ * GitHub：https://github.com/mcwlgzs/mc-homepage
+ *
+ * 本文件基于 MIT 许可证开源，详情请查看项目根目录的 LICENSE 文件
+ *
+ * 特性：
+ * - 响应式设计，支持移动端和桌面端
+ * - 现代化的渐变和动画效果
+ * - 自定义光标和交互效果
+ * - 优化的打印样式
+ *
+ * 最后更新：2025年
+ */
+
 /* 全局变量 */
 :root {
     --primary-color: #3b82f6;
@@ -22,12 +44,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 20px;
+  flex-direction: column;
   position: relative;
   overflow-x: hidden;
   line-height: 1.5;
+  margin: 0;
+  padding: 0;
 }
 
 /* 粒子背景 */
@@ -486,6 +508,61 @@ body {
 .skill-tag.git {
   background-color: #fef3c7;
   color: #b45309;
+}
+
+/* 主内容区域 */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+/* 页面底部 */
+footer {
+  margin-top: auto;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+/* ICP备案信息样式 */
+.icp-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.icp-info a {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.icp-info a:hover {
+  color: #3b82f6;
+}
+
+.icp-info img {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+/* 响应式设计 - ICP信息 */
+@media (max-width: 640px) {
+  .icp-info {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .icp-info span {
+    display: none;
+  }
 }
 
 /* 返回顶部按钮 */

@@ -1,4 +1,7 @@
-# 沐辰个人主页爬虫规则
+# 沐辰个人主页爬虫规则 (Muchen Personal Homepage - Robots.txt)
+# Copyright (c) 2025 沐辰 (MC)
+# GitHub: https://github.com/mcwlgzs/mc-homepage
+# Licensed under MIT License
 User-agent: *
 Allow: /
 Disallow: /assets/files/private/

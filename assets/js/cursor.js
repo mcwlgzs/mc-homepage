@@ -1,3 +1,25 @@
+/*!
+ * 沐辰个人主页 - 自定义光标效果 (Muchen Personal Homepage - Custom Cursor Effects)
+ *
+ * Copyright (c) 2025 沐辰 (MC)
+ *
+ * 项目描述：为个人主页提供自定义光标效果和交互动画
+ * 作者：沐辰 (MC)
+ * 邮箱：mcwlgzs@qq.com
+ * 网站：https://mcwl.net
+ * GitHub：https://github.com/mcwlgzs/mc-homepage
+ *
+ * 本文件基于 MIT 许可证开源，详情请查看项目根目录的 LICENSE 文件
+ *
+ * 功能特性：
+ * - 自定义光标样式和动画
+ * - 平滑的光标跟随效果
+ * - 交互元素的悬停反馈
+ * - 响应式设计，移动端自动隐藏
+ *
+ * 最后更新：2025年
+ */
+
 var CURSOR;
 
 Math.lerp = (a, b, n) => (1 - n) * a + n * b;

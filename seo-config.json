@@ -1,4 +1,5 @@
 {
+  "_comment": "沐辰个人主页 SEO配置文件 | Copyright (c) 2025 沐辰 (MC) | MIT License | https://github.com/mcwlgzs/mc-homepage",
   "site": {
     "name": "沐辰的个人网站",
     "title": "沐辰网络 - 个人主页 | 全栈开发工程师 - Web开发专家",
@@ -8,7 +9,7 @@
     "language": "zh-CN",
     "charset": "UTF-8",
     "author": "沐辰",
-    "copyright": "© 2024 沐辰. All rights reserved.",
+    "copyright": "© 2025 沐辰 (MC). All rights reserved. Licensed under MIT License.",
     "email": "mcwlgzs@qq.com"
   },
   "keywords": {
