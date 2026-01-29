@@ -6,12 +6,12 @@
 ![GitHub forks](https://img.shields.io/github/forks/mcwlgzs/mc-homepage?style=social)
 ![GitHub issues](https://img.shields.io/github/issues/mcwlgzs/mc-homepage)
 ![GitHub license](https://img.shields.io/github/license/mcwlgzs/mc-homepage)
-![Website](https://img.shields.io/website?url=https%3A%2F%2Fmcwl.net)
+![网站](https://img.shields.io/website?url=https%3A%2F%2Fmcwl.net)
 ![Gitee stars](https://gitee.com/Mcwlgzs/mc-homepage/badge/star.svg?theme=dark)
 
 **一个基于 Tailwind CSS + JavaScript 构建的现代化个人主页**
 
-[🌟 在线预览](https://mcwl.net) | [📖 使用文档](#-快速开始) | [🐛 问题反馈](https://github.com/mcwlgzs/mc-homepage/issues) | [💬 讨论交流](https://github.com/mcwlgzs/mc-homepage/discussions)
+[🌟 在线预览]([https://mc-homepage.vercel.app/]) | [📖 使用文档](#-快速开始) | [🐛 问题反馈](https://github.com/mcwlgzs/mc-homepage/issues) | [💬 讨论交流](https://github.com/mcwlgzs/mc-homepage/discussions)
 
 </div>
 
