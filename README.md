@@ -11,7 +11,7 @@
 
 **一个基于 Tailwind CSS + JavaScript 构建的现代化个人主页**
 
-[🌟 在线预览]([https://mc-homepage.vercel.app/]) | [📖 使用文档](#-快速开始) | [🐛 问题反馈](https://github.com/mcwlgzs/mc-homepage/issues) | [💬 讨论交流](https://github.com/mcwlgzs/mc-homepage/discussions)
+[🌟 在线预览](https://mc-homepage.vercel.app/) | [📖 使用文档](#-快速开始) | [🐛 问题反馈](https://github.com/mcwlgzs/mc-homepage/issues) | [💬 讨论交流](https://github.com/mcwlgzs/mc-homepage/discussions)
 
 </div>
 
